@@ -6,17 +6,25 @@
     <title>Testando o Iframe</title>
     <style>
         body{
-            background-color: black;
+            background-color: rgb(110, 105, 105);
         }
         iframe{
-            display: block;
-            margin: auto;
+            border: white;
+        }
+        a{
+            color: width;
+        }
+
+        a:visited{
+            color: white;
         }
     </style>
 </head>
 <body>
+    <ul><li><a href="index.html" target="frame"> Clique Aqui</a></li></ul>
+    <ul><li><a href="iframe.html" target="frame"> Clique Aqui 2</a></li></ul>
     <p>
-    <iframe src="index.html" height="500px" width="800px" frameborder="0" scolling="no">
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1>" height="500px" width="950vw" frameborder="0" scolling="no" name="frame">
         <a href="https://www.cursoemvideo.com"> Curso em Vídeo </a>
     </iframe>
     </p>
